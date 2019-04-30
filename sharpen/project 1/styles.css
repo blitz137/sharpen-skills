@@ -1,0 +1,89 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+body{
+	margin:0;
+	background:green;
+}
+
+#one{
+	width:100vw;
+	height:33.33vh;
+	background: orange;
+}
+#two{
+	width:33.33vw;
+	height:33.33vh;
+	background: red;
+	float:left;
+}
+#three{
+	float:left;
+	width:33.33vw;
+	height:33.33vh;
+	background: purple;
+}
+#four{
+		width:33.33vw;
+	height:33.33vh;
+	background: red;
+float: left;
+}
+
+
+#three p{
+	text-align: center;
+}
+
+@media screen and (max-width: 1600px){
+	#one{
+		background: blue;
+	}
+	#two{
+		background: green;
+	}
+	#three{
+		background: yellow;
+	}
+	#four{
+		background: red;
+	}
+	body{
+		background: pink;
+	}
+}
+@media screen and (max-width: 1080px){
+	#one{
+		background: yellow;
+	}
+	#two{
+		background: pink;
+	}
+	#three{
+		background: orange;
+	}
+	#four{
+		background: pink;
+	}
+	body{
+		background: steelblue;
+	}
+}
+@media screen and (max-width: 750px){
+	#one{
+		background: lime;
+	}
+	#two{
+		background: navy;
+	}
+	#three{
+		background: fuchsia;
+	}
+	#four{
+		background: aqua;
+	}
+	body{
+		background: olive;
+	}
+}
