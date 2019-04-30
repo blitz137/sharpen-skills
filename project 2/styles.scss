@@ -1,0 +1,94 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+
+body{
+	max-width: 1600px;
+	margin: 0 auto;
+	display: grid;
+	height: 100%;
+ 	grid-template-columns: repeat(12, 1fr);
+
+	grid-template-rows:repeat(7, 1fr);
+
+	div{
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		text-align: center;
+		
+	}
+
+	.header{
+		background: pink;
+		grid-column:1/-1;
+		
+
+	}
+	.nav{
+		background: yellow;
+		grid-column:1/-1;
+
+	}
+	.section{
+		background: blue;
+		grid-column:1/9;
+		grid-row:3/5;
+
+	}
+	.article{
+		background: fuchsia;
+		grid-column:1/9;
+		grid-row:5/7;
+		 
+	}
+	.aside{
+	background: teal;
+	grid-row:3/7;
+	
+	grid-column:9/-1;
+		 
+
+	 
+	}
+	.footer{
+		background: aqua;
+		grid-column:1/-1;
+		 
+	}
+
+}
+
+
+@media screen and (max-width: 1080px){
+	
+	body{
+
+
+	grid-template-rows:repeat(9, 1fr);
+
+
+		.section{
+			
+			grid-column:1/-1;
+			grid-row:3/5;
+
+		}
+		.article{
+			grid-column:1/-1;
+			grid-row:5/7;
+			 
+		}
+		.aside{
+		background: teal;
+		grid-row:7/9;
+		
+		grid-column:1/-1;
+			 
+
+		 
+		}
+
+	}
+}
